@@ -1,0 +1,32 @@
+.user-profile {
+    margin-top: 20px;
+    color: white;
+    &__status {
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__thumbnail {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__button {
+        padding: 8px 20px;
+        color: black;
+        &:before {
+            background: none;
+        }
+        &:hover {
+            &:before {
+                background: none;
+            }
+        }
+    }
+    &__email {
+        text-align: center;
+        font-size: 24px;
+        text-decoration: underline;
+        color: white;
+    }
+}

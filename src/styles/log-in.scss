@@ -1,0 +1,108 @@
+.log-in {
+    color: $logColor;
+    text-align: center;
+    margin-top: calc((100vh - 330px) / 2); 
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    &__input {
+        color: $logColor;
+        background: rgba(110, 83, 72, .2);
+        border: none;
+        padding: 10px 50px;
+        display: block;
+        width: 100%;
+        outline: none;
+        border-radius: 50px;
+        border: 2px solid transparent;
+        transition: all .3s;
+        position: relative;
+        &::placeholder {
+            color: white;
+            transition: all .3s;
+        }
+        &:focus {
+            -webkit-box-shadow: 0px 0px 31px 5px #ECD091;
+            -moz-box-shadow: 0px 0px 31px 5px #ECD091;
+            box-shadow: 0px 0px 31px 5px #ECD091;
+            &::placeholder {
+                opacity: .4;
+            }
+        }
+    }
+    &__not-found {
+        opacity: 0;
+        margin: 3px 0;
+        transition: all .3s;
+    }
+    &__submit {
+        background: rgba(243, 214, 176, .5);
+        border: none;
+        width: 300px;
+        border-radius: 50px;
+        padding: 8px 0;
+        font-weight: bold;
+        transition: all .3s;
+        margin-bottom: 30px;
+        outline: none;
+        &:hover {
+            background: $submitColor;
+        }
+    }
+    &__container {
+        position: relative;
+        max-width: 300px;
+        margin: 0 auto;  
+        &:after {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            left: 15px;
+        }      
+    }
+    &__support {
+        color: black;
+    }
+    &__link {
+        color: rgba(243, 214, 176, 1);
+        margin: 0 5px;
+        transition: all .3s;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            text-decoration: none;
+            border-color: $grayColor;
+        }
+    }
+}
+
+.visible {
+    opacity: 1;
+}
+
+.email-container:after {
+    background: url('./img/email.png') no-repeat center;
+}
+.password-container:after {
+    background: url('./img/lock.png') no-repeat center;
+}
+
+
+.warning {
+    border: 2px solid red;
+}
+
+@media (max-width: 360px) {
+    .log-in {
+        &__container {
+            width: 200px;
+        }
+        &__submit {
+            width: 200px;
+        }
+    }
+}

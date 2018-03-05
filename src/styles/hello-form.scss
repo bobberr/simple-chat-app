@@ -1,0 +1,19 @@
+.hello-form {
+    margin-top: calc((100vh - 182px) / 2);
+    text-align: center;
+    color: $logColor;
+    &__link {
+        color: $logColor;
+        display: block;
+        margin: 20px;
+        border: 2px solid $logColor;
+        padding: 10px 0;
+        border-radius: 50px;
+        transition: all .3s;
+        &:hover {
+            text-decoration: none;
+            background: $logColor;
+            color: black;
+        }
+    }
+}

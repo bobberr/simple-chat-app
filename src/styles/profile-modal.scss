@@ -1,0 +1,55 @@
+.profile-modal {
+    color: white;
+    label {
+        text-transform: uppercase;
+    }
+    input {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 60%;
+        outline: none;
+        border: none;
+        color: rgb(105,111,121);
+        background: transparent;
+        border-bottom: 2px solid rgb(105,111,121);
+        transition: all .3s;
+        &:focus {
+            border-color: rgb(0,172,232);
+            color: white;
+        }
+        &[type="submit"] {
+            margin: 10px 0 30px 0;
+            border: 2px solid rgb(0,172,232);
+            background: transparent;            
+            color: white;
+            &:hover {
+                background: rgb(0,172,232);                
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__delete {
+        background: transparent;
+        border: 2px solid red;
+        padding: 10px;
+        width: 60%;
+        margin-bottom: 20px;
+        transition: all .3s;
+        &:hover {
+            background: red;
+        }
+    }
+}
+
+.modal-content {
+    background: rgb(67,76,84) !important;
+}

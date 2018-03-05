@@ -1,0 +1,60 @@
+* {
+    font-family: 'Cabin', sans-serif;
+}
+.marker {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.logged {
+    background: green;
+}
+.unlogged {
+    background: red;
+}
+
+.auth-background {
+    background: url('./img/background.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+
+#app {
+    height: 100vh;
+}
+
+.nav-tabs {
+    border: none !important;
+    li {
+        width: 33.33%;
+        text-align: center;
+        a {
+            border-radius: 0 0 0 0 !important;
+            color: white;
+            margin: 0 !important;
+            transition: all .3s !important;   
+            border: none !important;
+            outline: none;
+            &[aria-selected="false"]:hover {
+                background: rgba(247,206,162, .8) !important;
+            }    
+            &[aria-selected="true"] {
+                color: white !important;
+                background: $submitColor !important; 
+            }    
+        }
+    }
+}
+
+.loading {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+    margin-top: calc(100vh/2 - 56px);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,71 @@
+.user-list {
+    color: white;
+    padding: 0 50px;
+}
+.user-item {
+    background: rgba(67,76,84, .4);
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+    margin: 10px 0;
+    padding: 5px 30px;
+    border: 2px solid transparent;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+        border-color: white;
+        background: rgba(67,76,84, 1);
+    }
+    &__name {
+        width: 200px;
+        text-align: center;
+        margin: 0;
+    }
+    &__thumbnail {
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+    }
+    &__email {
+        width: 200px;
+        text-align: center;
+        margin: 0;
+    }
+    &__indicator {
+        width: 100px;
+        text-align: center;
+        margin: 0;
+        position: relative;
+    }
+}
+.online {
+    &:after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: green;
+    }
+}
+
+.offline {
+    &:after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: red;
+    }
+}

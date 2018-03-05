@@ -1,0 +1,33 @@
+.message {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    &__thumbnail {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    &__author {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        color: black;
+        border-radius: 30px;
+        padding: 10px 30px;
+        min-width: 300px;
+        margin-left: 10px;
+        word-wrap: break-word;
+    }
+    &__content {
+        max-width: 800px;
+        margin-bottom: 4px;
+    }
+    &__time {
+        margin: 0;
+        color: gray;
+    }
+}

@@ -1,0 +1,120 @@
+.profile {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__email {
+        color: black;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    &__thumbnail {        
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background: white;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        border: 5px solid rgba(198,226,221, .5);
+    }
+    &__thumbnail-container {
+        position: relative;
+    }
+    &__image-button {
+        top: 0;
+        left: 0px;
+        &:hover {
+            background: rgba(247,206,162, 1);
+        }
+        &:after {
+            background: url('./img/camera.png') no-repeat center;            
+        }
+    }
+    &__button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 1);
+        border: 4px solid rgba(198,226,221, .8);
+        border-radius: 50%;
+        outline: none;
+        position: absolute;
+        transition: all .3s;
+    }
+    &__edit-button {
+        right: 0;
+        bottom: 0px;
+        &:after {
+            background: url('./img/edit.png') no-repeat center;
+        }
+        &:hover {
+            background: rgba(247,206,162, 1);
+        }
+    }
+    &__image-button:after, &__edit-button:after {
+        content: '';
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto auto;
+    }
+    &__logOut {
+        align-self: flex-end;
+        margin-right: 50px;
+        border: 4px solid rgba(198, 226, 221, 0.8);
+        background: white;
+        padding: 8px 20px 8px 40px;
+        border-radius: 50px;
+        outline: none;
+        transition: all .3s;
+        position: relative;
+        &:hover {
+            background: transparent;
+            color: white;
+            &:before {
+                background: url('./img/exit_white.png');
+            }
+        }
+        &:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+            margin: auto 0;
+            background: url('./img/exit.png');
+        }
+    }
+    &__status {
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    &__name {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    &__position {
+        color: rgba(255, 255, 255, .6);
+    }
+    &__location {
+        position: relative;
+        &:before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: -16px;
+            top: 1px;
+            background: url('./img/location.png');
+        }
+    }
+}
